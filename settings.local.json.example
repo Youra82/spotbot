@@ -1,0 +1,6 @@
+{
+    "spotbot": {
+        "dry_run": false,
+        "max_capital_usdt": null
+    }
+}

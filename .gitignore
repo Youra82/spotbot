@@ -1,0 +1,14 @@
+secret.json
+*.bak
+__pycache__/
+.venv/
+logs/
+artifacts/
+research/data/
+research/*.pkl
+research/*.npy
+research/*.log
+spotbot.lock
+settings.local.json
+research/*.csv
+research/__pycache__/

@@ -1,0 +1,20 @@
+{
+    "spotbot": {
+        "_note": "V3 'fast_momentum' (2026-09-25, Standard): Fast-Momentum-Ensemble (Lookback 7-21 Tage, Top 1-3 der 5-10 liquidesten Coins, woechentlich, alle Tranchen), ungenutztes Kapital -> BTC wenn alle BTC-Trendfilter positiv, BTC unter SMA150 -> Exposure 50%. Backtest 2018-2026 x106.5, MaxDD -40.0%, OOS 2023+ +680% (BTC Hold +406% -> +54% mehr). Stress: 2x Kosten OOS +502%, 1 Tag Verzug +529%, ohne 10 Top-Gewinner +450% (DD -50.7%). V2.1 (konservativer): strategy='core_satellite', core_share=0.2, rebal_days=[7], vol_target=10 -> x38.8, DD -34.9%, OOS +244%. Siehe RESEARCH.md.",
+        "dry_run": true,
+        "quote": "USDT",
+        "strategy": "fast_momentum",
+        "signal_exchange": "binance",
+        "core_share": 0.2,
+        "rebal_days": [7],
+        "vol_target": 1.5,
+        "rebalance_band": 0.02,
+        "min_trade_usdt": 5.0,
+        "max_capital_usdt": null,
+        "history_days": 400,
+        "telegram_daily_summary": true,
+        "universe": ["BTC", "ETH", "BNB", "XRP", "ADA", "SOL", "DOGE", "TRX", "LTC", "LINK", "AVAX", "DOT", "BCH", "XLM", "ETC", "ATOM", "NEAR", "UNI", "AAVE", "FIL", "HBAR", "ALGO", "VET", "ICP", "INJ", "SUI", "APT", "ARB", "OP", "SHIB", "NEO", "ZEC", "QTUM", "ONT", "XTZ", "ZIL", "SAND", "MANA", "AXS", "CHZ", "COMP", "SNX", "CRV", "SUSHI", "1INCH", "BAT", "KAVA", "KSM", "CELO", "CAKE"],
+        "slow_sma": 150,
+        "slow_floor": 0.5
+    }
+}
